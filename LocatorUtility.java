@@ -11,9 +11,9 @@ public class LocatorUtility {
     /**
      * Method to find an element based on locator type and value.
      *
-     * @param driver       the WebDriver instance
-     * @param locatorType  the type of locator (e.g., "id", "name", "xpath", etc.)
-     * @param locatorValue the value of the locator
+     * para driver       the WebDriver instance
+     * para locatorType  the type of locator (e.g., "id", "name", "xpath", etc.)
+     * para locatorValue the value of the locator
      * @return the located WebElement
      */
     public static WebElement findElement(WebDriver driver, String locatorType, String locatorValue) {
