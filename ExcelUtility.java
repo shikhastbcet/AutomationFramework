@@ -10,6 +10,13 @@ import java.util.List;
 
 public class ExcelUtility {
 	private String filePath;
+// You need to create an instance of the ExcelUtility class by passing the file path of your Excel file
+	// The getTestData method allows you to read data from a specific sheet in the Excel file.
+	// It returns a list of test data, where each row from the Excel sheet is represented as an array of objects (Object[]).
+	// From Where u want to access read file data 
+	//String filePath = "path/to/your/excel/file.xlsx";
+// ExcelUtility excelUtility = new ExcelUtility(filePath);
+// It's return List<Object[]> testData = excelUtility.getTestData("Sheet1"); // Pass the sheet name
 
 	public ExcelUtility(String filePath) {
 		this.filePath = filePath;
@@ -62,6 +69,8 @@ public class ExcelUtility {
 
 		return data;
 	}
+
+	
 
 	private String getStringCellValue(Cell cell) {
 		return (cell != null) ? cell.toString().trim() : ""; // Return empty string if cell is null
